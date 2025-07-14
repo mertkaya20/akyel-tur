@@ -69,11 +69,13 @@ const Topbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <div className="w-32 h-12 flex items-center justify-start">
-            <img
-              src={AkyelLogo}
-              alt="Akyel Logo"
-              className="max-w-full max-h-full object-contain"
-            />
+            <Link to="/">
+              <img
+                src={AkyelLogo}
+                alt="Akyel Logo"
+                className="max-w-full max-h-full object-contain"
+              />
+            </Link>
           </div>
         </div>
 
