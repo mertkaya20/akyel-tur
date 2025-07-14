@@ -596,7 +596,7 @@ const ContactPage = () => {
               className="bg-white text-red-500 px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
             >
               <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-              <span>+90 (312) 123 45 67</span>
+              <span>+905324669889</span>
             </a>
           </div>
         </div>

@@ -176,8 +176,8 @@ const AboutUs = () => {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative max-w-6xl mx-auto px-4">
           <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Hakkımızda</h1>
-            <p className="text-xl md:text-2xl font-light max-w-3xl mx-auto">
+            <h1 className="text-3xl md:text-6xl font-bold mb-6">Hakkımızda</h1>
+            <p className="text-l md:text-2xl font-light max-w-3xl mx-auto">
               Deneyimimizle güvenli, konforlu ve kaliteli ulaşım hizmetleri
               sunuyoruz.
             </p>
@@ -185,339 +185,343 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Story Section */}
-      <div className="py-20">
-        <div className="max-w-6xl mx-auto px-4 md:px-2">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
+      <div className="px-7 sm:px-8 md:px-14 lg:px-20 xl:px-32">
+        {/* Story Section */}
+        <div className="py-20">
+          <div className="max-w-6xl mx-auto px-4 md:px-2">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="bg-red-500 p-2 rounded-md">
+                    <Heart className="w-4 h-4 text-white" />
+                  </div>
+                  <p className="uppercase tracking-widest text-red-600 font-semibold text-md">
+                    Hikayemiz
+                  </p>
+                </div>
+
+                <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                  Güvenilir Ulaşım Partneri
+                </h2>
+
+                <div className="space-y-4 text-gray-600">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Soluta, praesentium? Obcaecati quae reiciendis voluptate?
+                    Facilis repellat voluptas officiis expedita cupiditate vero
+                    aut excepturi fugit at a quod officia, veniam suscipit.
+                    Nobis cumque placeat suscipit dolorum vitae sed
+                    reprehenderit veritatis voluptate..
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Debitis rem ad quod consectetur cupiditate doloremque
+                    voluptatibus iusto corporis ex. Aliquam vel repudiandae sed
+                    placeat eum, necessitatibus commodi? Cupiditate, quam ipsam.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Velit esse voluptas hic quibusdam sunt officia est autem ab?
+                    Explicabo, cum quam obcaecati repellat temporibus tenetur.
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative">
+                <img
+                  src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop"
+                  alt="Ekibimiz"
+                  className="rounded-2xl w-full shadow-2xl"
+                />
+                <div className="absolute -bottom-6 -right-6 bg-red-500 text-white p-6 rounded-xl">
+                  <div className="text-3xl font-bold">15+</div>
+                  <div className="text-sm">Yıllık Deneyim</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Values Section */}
+        <div className="py-20 ">
+          <div className="max-w-6xl mx-auto px-4 md:px-2">
+            <div className="text-center py-10">
+              <div className="flex justify-center items-center gap-2 mb-2">
                 <div className="bg-red-500 p-2 rounded-md">
-                  <Heart className="w-4 h-4 text-white" />
+                  <Target className="w-4 h-4 text-white" />
                 </div>
                 <p className="uppercase tracking-widest text-red-600 font-semibold text-md">
-                  Hikayemiz
+                  Değerlerimiz
                 </p>
               </div>
 
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                Güvenilir Ulaşım Partneri
-              </h2>
+              <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+                Temel İlkelerimiz
+              </h1>
 
-              <div className="space-y-4 text-gray-600">
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Soluta, praesentium? Obcaecati quae reiciendis voluptate?
-                  Facilis repellat voluptas officiis expedita cupiditate vero
-                  aut excepturi fugit at a quod officia, veniam suscipit. Nobis
-                  cumque placeat suscipit dolorum vitae sed reprehenderit
-                  veritatis voluptate..
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis rem ad quod consectetur cupiditate doloremque
-                  voluptatibus iusto corporis ex. Aliquam vel repudiandae sed
-                  placeat eum, necessitatibus commodi? Cupiditate, quam ipsam.
-                </p>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Velit esse voluptas hic quibusdam sunt officia est autem ab?
-                  Explicabo, cum quam obcaecati repellat temporibus tenetur.
-                </p>
+              <div className="flex justify-center mt-4 relative h-1">
+                <span className="w-16 h-1 bg-red-500 rounded-full animate-move" />
               </div>
-            </div>
 
-            <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop"
-                alt="Ekibimiz"
-                className="rounded-2xl w-full shadow-2xl"
-              />
-              <div className="absolute -bottom-6 -right-6 bg-red-500 text-white p-6 rounded-xl">
-                <div className="text-3xl font-bold">15+</div>
-                <div className="text-sm">Yıllık Deneyim</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Values Section */}
-      <div className="py-20 ">
-        <div className="max-w-6xl mx-auto px-4 md:px-2">
-          <div className="text-center py-10">
-            <div className="flex justify-center items-center gap-2 mb-2">
-              <div className="bg-red-500 p-2 rounded-md">
-                <Target className="w-4 h-4 text-white" />
-              </div>
-              <p className="uppercase tracking-widest text-red-600 font-semibold text-md">
-                Değerlerimiz
+              <p className="text-lg pt-3 text-gray-600 max-w-2xl mx-auto">
+                Bu değerler doğrultusunda her gün daha iyi hizmet sunmaya
+                odaklanıyoruz
               </p>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-              Temel İlkelerimiz
-            </h1>
-
-            <div className="flex justify-center mt-4 relative h-1">
-              <span className="w-16 h-1 bg-red-500 rounded-full animate-move" />
-            </div>
-
-            <p className="text-lg pt-3 text-gray-600 max-w-2xl mx-auto">
-              Bu değerler doğrultusunda her gün daha iyi hizmet sunmaya
-              odaklanıyoruz
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-6">
-                  <value.icon className="w-8 h-8 text-red-500" />
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {values.map((value, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                >
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-6">
+                    <value.icon className="w-8 h-8 text-red-500" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    {value.title}
+                  </h3>
+                  <p className="text-gray-600">{value.description}</p>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  {value.title}
-                </h3>
-                <p className="text-gray-600">{value.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
-      {/*Services*/}
-      <div className="py-20 ">
-        <div className="max-w-6xl mx-auto px-4 md:px-2 ">
-          <div className="text-center py-10">
-            <div className="flex justify-center items-center gap-2 mb-2">
-              <div className="bg-red-500 p-2 rounded-md">
-                <Car className="w-4 h-4 text-white" />
+        {/*Services*/}
+        <div className="py-20 ">
+          <div className="max-w-6xl mx-auto px-4 md:px-2 ">
+            <div className="text-center py-10">
+              <div className="flex justify-center items-center gap-2 mb-2">
+                <div className="bg-red-500 p-2 rounded-md">
+                  <Car className="w-4 h-4 text-white" />
+                </div>
+                <p className="uppercase tracking-widest text-red-600 font-semibold text-md">
+                  Hizmetlerimiz
+                </p>
               </div>
-              <p className="uppercase tracking-widest text-red-600 font-semibold text-md">
-                Hizmetlerimiz
+              <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+                Sunduğumuz Hizmetler
+              </h1>
+              <div className="flex justify-center mt-4 relative h-1">
+                <span className="w-16 h-1 bg-red-500 rounded-full animate-pulse" />
+              </div>
+              <p className="text-lg pt-3 text-gray-600 max-w-2xl mx-auto">
+                Kaliteli ve güvenilir hizmet anlayışımızla size en iyisini
+                sunuyoruz
               </p>
             </div>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-              Sunduğumuz Hizmetler
-            </h1>
-            <div className="flex justify-center mt-4 relative h-1">
-              <span className="w-16 h-1 bg-red-500 rounded-full animate-pulse" />
-            </div>
-            <p className="text-lg pt-3 text-gray-600 max-w-2xl mx-auto">
-              Kaliteli ve güvenilir hizmet anlayışımızla size en iyisini
-              sunuyoruz
-            </p>
-          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service, index) => (
-              <div key={index} className="relative">
-                <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
-                  <div
-                    className="flex items-center gap-4 p-6 cursor-pointer hover:bg-gray-50 transition-colors duration-200"
-                    onClick={() => toggleService(index)}
-                  >
-                    <CheckCircle className="w-6 h-6 text-red-500 flex-shrink-0" />
-                    <span className="text-gray-700 font-medium flex-1">
-                      {service.name}
-                    </span>
-                    <div className="flex-shrink-0">
-                      {expandedService === index ? (
-                        <ChevronUp className="w-5 h-5 text-gray-400" />
-                      ) : (
-                        <ChevronDown className="w-5 h-5 text-gray-400" />
-                      )}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {services.map((service, index) => (
+                <div key={index} className="relative">
+                  <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden">
+                    <div
+                      className="flex items-center gap-4 p-6 cursor-pointer hover:bg-gray-50 transition-colors duration-200"
+                      onClick={() => toggleService(index)}
+                    >
+                      <CheckCircle className="w-6 h-6 text-red-500 flex-shrink-0" />
+                      <span className="text-gray-700 font-medium flex-1">
+                        {service.name}
+                      </span>
+                      <div className="flex-shrink-0">
+                        {expandedService === index ? (
+                          <ChevronUp className="w-5 h-5 text-gray-400" />
+                        ) : (
+                          <ChevronDown className="w-5 h-5 text-gray-400" />
+                        )}
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {expandedService === index && (
-                  <div className="absolute top-full left-0 right-0 z-50 bg-white rounded-xl shadow-xl border border-gray-200 mt-2">
-                    <div className="p-6">
-                      <div className="border-t pt-4">
-                        <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                          {service.description.split("**").map((part, i) =>
-                            i % 2 === 1 ? (
-                              <strong key={i} className="text-gray-800">
-                                {part}
-                              </strong>
-                            ) : (
-                              part
-                            )
-                          )}
-                        </p>
+                  {expandedService === index && (
+                    <div className="absolute top-full left-0 right-0 z-50 bg-white rounded-xl shadow-xl border border-gray-200 mt-2">
+                      <div className="p-6">
+                        <div className="border-t pt-4">
+                          <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                            {service.description.split("**").map((part, i) =>
+                              i % 2 === 1 ? (
+                                <strong key={i} className="text-gray-800">
+                                  {part}
+                                </strong>
+                              ) : (
+                                part
+                              )
+                            )}
+                          </p>
 
-                        <div className="mt-4">
-                          <h4 className="text-sm font-semibold text-gray-800 mb-2">
-                            {service.schools
-                              ? "Hizmet Verdiğimiz Okullar:"
-                              : service.companies
-                              ? "Çalıştığımız Firmalar:"
-                              : service.destinations
-                              ? "Hizmet Verdiğimiz Destinasyonlar:"
-                              : service.areas
-                              ? "Hizmet Bölgelerimiz:"
-                              : service.events
-                              ? "Etkinlik Türleri:"
-                              : service.routes
-                              ? "Popüler Rotalar:"
-                              : "Hizmet Alanları:"}
-                          </h4>
-                          <div className="flex flex-wrap gap-2">
-                            {(
-                              service.schools ||
-                              service.companies ||
-                              service.destinations ||
-                              service.areas ||
-                              service.events ||
-                              service.routes ||
-                              service.services
-                            ).map((item, i) => (
-                              <span
-                                key={i}
-                                className="bg-red-50 text-red-700 text-xs px-2 py-1 rounded-full font-medium"
-                              >
-                                {item}
-                              </span>
-                            ))}
+                          <div className="mt-4">
+                            <h4 className="text-sm font-semibold text-gray-800 mb-2">
+                              {service.schools
+                                ? "Hizmet Verdiğimiz Okullar:"
+                                : service.companies
+                                ? "Çalıştığımız Firmalar:"
+                                : service.destinations
+                                ? "Hizmet Verdiğimiz Destinasyonlar:"
+                                : service.areas
+                                ? "Hizmet Bölgelerimiz:"
+                                : service.events
+                                ? "Etkinlik Türleri:"
+                                : service.routes
+                                ? "Popüler Rotalar:"
+                                : "Hizmet Alanları:"}
+                            </h4>
+                            <div className="flex flex-wrap gap-2">
+                              {(
+                                service.schools ||
+                                service.companies ||
+                                service.destinations ||
+                                service.areas ||
+                                service.events ||
+                                service.routes ||
+                                service.services
+                              ).map((item, i) => (
+                                <span
+                                  key={i}
+                                  className="bg-red-50 text-red-700 text-xs px-2 py-1 rounded-full font-medium"
+                                >
+                                  {item}
+                                </span>
+                              ))}
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Vision & Mission Section */}
-      <div className="py-20">
-        <div className="max-w-6xl mx-auto px-4 md:px-2">
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div className="bg-gradient-to-br from-red-500 to-red-600 text-white rounded-2xl p-8 lg:p-12">
-              <div className="flex items-center gap-3 mb-6">
-                <Eye className="w-8 h-8" />
-                <h3 className="text-2xl font-bold">Vizyonumuz</h3>
-              </div>
-              <p className="text-lg leading-relaxed">
-                Türkiye'nin en güvenilir ve kaliteli ulaşım hizmetleri şirketi
-                olarak, müşterilerimize unutulmaz seyahat deneyimleri sunmak ve
-                sektörde öncü olmaya devam etmek.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-2xl p-8 lg:p-12">
-              <div className="flex items-center gap-3 mb-6">
-                <Target className="w-8 h-8" />
-                <h3 className="text-2xl font-bold">Misyonumuz</h3>
-              </div>
-              <p className="text-lg leading-relaxed">
-                Modern araç filomuz, uzman ekibimiz ve kaliteli hizmet
-                anlayışımızla her müşterimize güvenli, konforlu ve zamanında
-                ulaşım çözümleri sunmak.
-              </p>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Certificates Section */}
-      <div className="py-20">
-        <div className="max-w-6xl mx-auto px-4 md:px-2">
-          <div className="text-center py-10">
-            <div className="flex justify-center items-center gap-2 mb-2">
-              <div className="bg-red-500 p-2 rounded-md">
-                <Award className="w-4 h-4 text-white" />
+        {/* Vision & Mission Section */}
+        <div className="py-20">
+          <div className="max-w-6xl mx-auto px-4 md:px-2">
+            <div className="grid lg:grid-cols-2 gap-12">
+              <div className="bg-gradient-to-br from-red-500 to-red-600 text-white rounded-2xl p-8 lg:p-12">
+                <div className="flex items-center gap-3 mb-6">
+                  <Eye className="w-8 h-8" />
+                  <h3 className="text-2xl font-bold">Vizyonumuz</h3>
+                </div>
+                <p className="text-lg leading-relaxed">
+                  Türkiye'nin en güvenilir ve kaliteli ulaşım hizmetleri şirketi
+                  olarak, müşterilerimize unutulmaz seyahat deneyimleri sunmak
+                  ve sektörde öncü olmaya devam etmek.
+                </p>
               </div>
-              <p className="uppercase tracking-widest text-red-600 font-semibold text-md">
-                Belgelerimiz
+
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-2xl p-8 lg:p-12">
+                <div className="flex items-center gap-3 mb-6">
+                  <Target className="w-8 h-8" />
+                  <h3 className="text-2xl font-bold">Misyonumuz</h3>
+                </div>
+                <p className="text-lg leading-relaxed">
+                  Modern araç filomuz, uzman ekibimiz ve kaliteli hizmet
+                  anlayışımızla her müşterimize güvenli, konforlu ve zamanında
+                  ulaşım çözümleri sunmak.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Certificates Section */}
+        <div className="py-20">
+          <div className="max-w-6xl mx-auto px-4 md:px-2">
+            <div className="text-center py-10">
+              <div className="flex justify-center items-center gap-2 mb-2">
+                <div className="bg-red-500 p-2 rounded-md">
+                  <Award className="w-4 h-4 text-white" />
+                </div>
+                <p className="uppercase tracking-widest text-red-600 font-semibold text-md">
+                  Belgelerimiz
+                </p>
+              </div>
+
+              <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+                Sahip Olduğumuz Belgelerimiz
+              </h1>
+
+              <div className="flex justify-center mt-4 relative h-1">
+                <span className="w-16 h-1 bg-red-500 rounded-full animate-pulse" />
+              </div>
+
+              <p className="text-lg pt-3 text-gray-600 max-w-2xl mx-auto">
+                Belgelerimiz, güvenilir ve yetkin hizmet anlayışımızın
+                göstergesidir.
               </p>
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-              Sahip Olduğumuz Belgelerimiz
-            </h1>
-
-            <div className="flex justify-center mt-4 relative h-1">
-              <span className="w-16 h-1 bg-red-500 rounded-full animate-pulse" />
-            </div>
-
-            <p className="text-lg pt-3 text-gray-600 max-w-2xl mx-auto">
-              Belgelerimiz, güvenilir ve yetkin hizmet anlayışımızın
-              göstergesidir.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {certificates.map((certificate) => (
-              <div
-                key={certificate.id}
-                className="group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer"
-                onClick={() => handleCertificateClick(certificate)}
-              >
-                <div className="aspect-[3/4] overflow-hidden">
-                  <img
-                    src={certificate.image}
-                    alt={certificate.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
-                    {certificate.name}
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    {certificate.description}
-                  </p>
-                </div>
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <Eye className="w-4 h-4 text-gray-700" />
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Modal for full-screen photo view */}
-          {selectedCertificate && (
-            <div
-              className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-2 sm:p-4"
-              onClick={handleOverlayClick}
-            >
-              <div className="relative w-full h-full max-w-6xl max-h-[95vh] flex items-center justify-center">
-                <img
-                  src={selectedCertificate.image}
-                  alt={selectedCertificate.name}
-                  className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
-                />
-                <button
-                  onClick={handleCloseModal}
-                  className="absolute top-2 right-2 sm:top-4 sm:right-4 text-white hover:text-red-400 transition-colors z-10 bg-black/60 hover:bg-black/80 rounded-full p-2 sm:p-3 backdrop-blur-sm shadow-lg"
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {certificates.map((certificate) => (
+                <div
+                  key={certificate.id}
+                  className="group relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer"
+                  onClick={() => handleCertificateClick(certificate)}
                 >
-                  <X className="w-5 h-5 sm:w-6 sm:h-6" />
-                </button>
-              </div>
+                  <div className="aspect-[3/4] overflow-hidden">
+                    <img
+                      src={certificate.image}
+                      alt={certificate.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
+                      {certificate.name}
+                    </h3>
+                    <p className="text-gray-600 text-sm">
+                      {certificate.description}
+                    </p>
+                  </div>
+                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <Eye className="w-4 h-4 text-gray-700" />
+                  </div>
+                </div>
+              ))}
             </div>
-          )}
-        </div>
-      </div>
 
-      {/* Contact CTA */}
-      <div className="py-20 bg-gradient-to-r from-red-700 to-red-800 text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Bizimle İletişime Geçin</h2>
-          <p className="text-xl mb-8">Sorularınız için 7/24 hizmetinizdeyiz</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <div className="flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
-              <Phone className="w-5 h-5" />
-              <span>+90 (555) 123 45 67</span>
-            </div>
-            <div className="flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
-              <Mail className="w-5 h-5" />
-              <span>info@example.com</span>
+            {/* Modal for full-screen photo view */}
+            {selectedCertificate && (
+              <div
+                className="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 flex items-center justify-center p-2 sm:p-4"
+                onClick={handleOverlayClick}
+              >
+                <div className="relative w-full h-full max-w-6xl max-h-[95vh] flex items-center justify-center">
+                  <img
+                    src={selectedCertificate.image}
+                    alt={selectedCertificate.name}
+                    className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                  />
+                  <button
+                    onClick={handleCloseModal}
+                    className="absolute top-2 right-2 sm:top-4 sm:right-4 text-white hover:text-red-400 transition-colors z-10 bg-black/60 hover:bg-black/80 rounded-full p-2 sm:p-3 backdrop-blur-sm shadow-lg"
+                  >
+                    <X className="w-5 h-5 sm:w-6 sm:h-6" />
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Contact CTA */}
+        <div className="py-20 bg-gradient-to-r from-red-700 to-red-800 text-white">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <h2 className="text-4xl font-bold mb-6">Bizimle İletişime Geçin</h2>
+            <p className="text-xl mb-8">
+              Sorularınız için 7/24 hizmetinizdeyiz
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
+                <Phone className="w-5 h-5" />
+                <span>+90 (555) 123 45 67</span>
+              </div>
+              <div className="flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
+                <Mail className="w-5 h-5" />
+                <span>info@example.com</span>
+              </div>
             </div>
           </div>
         </div>
