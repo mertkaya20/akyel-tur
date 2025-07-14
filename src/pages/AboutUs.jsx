@@ -188,7 +188,7 @@ const AboutUs = () => {
       <div className="px-7 sm:px-8 md:px-14 lg:px-20 xl:px-32">
         {/* Story Section */}
         <div className="py-20">
-          <div className="max-w-6xl mx-auto px-4 md:px-2">
+          <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center gap-2 mb-2">
@@ -244,7 +244,7 @@ const AboutUs = () => {
 
         {/* Values Section */}
         <div className="py-20 ">
-          <div className="max-w-6xl mx-auto px-4 md:px-2">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center py-10">
               <div className="flex justify-center items-center gap-2 mb-2">
                 <div className="bg-red-500 p-2 rounded-md">
@@ -290,7 +290,7 @@ const AboutUs = () => {
 
         {/*Services*/}
         <div className="py-20 ">
-          <div className="max-w-6xl mx-auto px-4 md:px-2 ">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center py-10">
               <div className="flex justify-center items-center gap-2 mb-2">
                 <div className="bg-red-500 p-2 rounded-md">
@@ -397,7 +397,7 @@ const AboutUs = () => {
 
         {/* Vision & Mission Section */}
         <div className="py-20">
-          <div className="max-w-6xl mx-auto px-4 md:px-2">
+          <div className="max-w-6xl mx-auto ">
             <div className="grid lg:grid-cols-2 gap-12">
               <div className="bg-gradient-to-br from-red-500 to-red-600 text-white rounded-2xl p-8 lg:p-12">
                 <div className="flex items-center gap-3 mb-6">
@@ -428,7 +428,7 @@ const AboutUs = () => {
 
         {/* Certificates Section */}
         <div className="py-20">
-          <div className="max-w-6xl mx-auto px-4 md:px-2">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center py-10">
               <div className="flex justify-center items-center gap-2 mb-2">
                 <div className="bg-red-500 p-2 rounded-md">
@@ -508,7 +508,7 @@ const AboutUs = () => {
 
         {/* Contact CTA */}
         <div className="py-20 bg-gradient-to-r from-red-700 to-red-800 text-white">
-          <div className="max-w-4xl mx-auto px-4 text-center">
+          <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">Bizimle İletişime Geçin</h2>
             <p className="text-xl mb-8">
               Sorularınız için 7/24 hizmetinizdeyiz
