@@ -187,7 +187,7 @@ const AboutUs = () => {
 
       {/* Story Section */}
       <div className="py-20">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4 md:px-2">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center gap-2 mb-2">
@@ -243,7 +243,7 @@ const AboutUs = () => {
 
       {/* Values Section */}
       <div className="py-20 ">
-        <div className="max-w-6xl mx-auto ">
+        <div className="max-w-6xl mx-auto px-4 md:px-2">
           <div className="text-center py-10">
             <div className="flex justify-center items-center gap-2 mb-2">
               <div className="bg-red-500 p-2 rounded-md">
@@ -289,7 +289,7 @@ const AboutUs = () => {
 
       {/*Services*/}
       <div className="py-20 ">
-        <div className="max-w-6xl mx-auto ">
+        <div className="max-w-6xl mx-auto px-4 md:px-2 ">
           <div className="text-center py-10">
             <div className="flex justify-center items-center gap-2 mb-2">
               <div className="bg-red-500 p-2 rounded-md">
@@ -396,7 +396,7 @@ const AboutUs = () => {
 
       {/* Vision & Mission Section */}
       <div className="py-20">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto px-4 md:px-2">
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="bg-gradient-to-br from-red-500 to-red-600 text-white rounded-2xl p-8 lg:p-12">
               <div className="flex items-center gap-3 mb-6">
@@ -427,7 +427,7 @@ const AboutUs = () => {
 
       {/* Certificates Section */}
       <div className="py-20">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto px-4 md:px-2">
           <div className="text-center py-10">
             <div className="flex justify-center items-center gap-2 mb-2">
               <div className="bg-red-500 p-2 rounded-md">
