@@ -252,7 +252,6 @@ const Topbar = () => {
                 </div>
               </div>
             </div>
-
             <Link
               to="/arac-filomuz"
               onClick={closeMobileMenu}
@@ -260,21 +259,6 @@ const Topbar = () => {
             >
               Filomuz
             </Link>
-            <a
-              href="#"
-              onClick={closeMobileMenu}
-              className="block py-3 text-gray-700 hover:text-red-500 font-medium transition-colors duration-200"
-            >
-              Referanslarımız
-            </a>
-            <a
-              href="#"
-              onClick={closeMobileMenu}
-              className="block py-3 text-gray-700 hover:text-red-500 font-medium transition-colors duration-200"
-            >
-              Blog
-            </a>
-
             {/* Mobile Communication */}
             <div className="pt-4">
               <Link

@@ -355,7 +355,7 @@ const StudyServices = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-2">
+      <section className="py-2 pb-12">
         <div className="container mx-auto px-7 sm:px-8 md:px-14 lg:px-20 xl:px-32">
           <div className="text-center py-10">
             <div className="flex justify-center items-center gap-2 mb-2">
@@ -376,7 +376,7 @@ const StudyServices = () => {
             </div>
 
             <p className="text-lg pt-3 text-gray-600 max-w-2xl mx-auto">
-              Kaliteli eğitim ve başarı odaklı yaklaşım için doğru adres
+              Lorem ipsum dolor, sit amet consectetur adipisicing.
             </p>
           </div>
 
@@ -408,11 +408,11 @@ const StudyServices = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-red-500 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center gap-2">
               <Phone className="w-5 h-5" />
-              Hemen Kayıt Ol
+              Rezervasyon Yap
             </button>
             <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-red-500 transition-colors duration-200 flex items-center justify-center gap-2">
               <MapPin className="w-5 h-5" />
-              Ücretsiz Deneme
+              Fiyat Al
             </button>
           </div>
         </div>
