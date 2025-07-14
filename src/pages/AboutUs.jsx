@@ -505,23 +505,21 @@ const AboutUs = () => {
             )}
           </div>
         </div>
+      </div>
 
-        {/* Contact CTA */}
-        <div className="py-20 bg-gradient-to-r from-red-700 to-red-800 text-white">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">Bizimle İletişime Geçin</h2>
-            <p className="text-xl mb-8">
-              Sorularınız için 7/24 hizmetinizdeyiz
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <div className="flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
-                <Phone className="w-5 h-5" />
-                <span>+90 (555) 123 45 67</span>
-              </div>
-              <div className="flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
-                <Mail className="w-5 h-5" />
-                <span>info@example.com</span>
-              </div>
+      {/* Contact CTA */}
+      <div className="py-20 bg-gradient-to-r from-red-700 to-red-800 text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold mb-6">Bizimle İletişime Geçin</h2>
+          <p className="text-xl mb-8">Sorularınız için 7/24 hizmetinizdeyiz</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
+              <Phone className="w-5 h-5" />
+              <span>+90 (555) 123 45 67</span>
+            </div>
+            <div className="flex items-center gap-3 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
+              <Mail className="w-5 h-5" />
+              <span>info@example.com</span>
             </div>
           </div>
         </div>
