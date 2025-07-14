@@ -9,7 +9,6 @@ import {
   FileText,
   CheckCircle,
   AlertCircle,
-  Contact,
 } from "lucide-react";
 
 const ContactPage = () => {
@@ -41,7 +40,7 @@ const ContactPage = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // EmailJS'i yükle
+  // EmailJS
   useEffect(() => {
     if (!window.emailjs) {
       const script = document.createElement("script");
@@ -56,7 +55,7 @@ const ContactPage = () => {
     }
   }, [EMAILJS_PUBLIC_KEY]);
 
-  // Tarih ve saat formatı için fonksiyon
+  // Date and Time
   const getCurrentDateTime = () => {
     const now = new Date();
     const date = now.toLocaleDateString("tr-TR", {
@@ -73,7 +72,7 @@ const ContactPage = () => {
     return { date, time };
   };
 
-  // Telefon numarası formatlamak için fonksiyon
+  // Phone Number
   const formatPhoneNumber = (value) => {
     const numbers = value.replace(/\D/g, "");
     const truncatedNumbers = numbers.slice(0, 10);
@@ -115,7 +114,7 @@ const ContactPage = () => {
     setIsSubmitting(true);
     setFormStatus("");
 
-    // Environment variables kontrolü
+    // Environment variables control
     if (!EMAILJS_PUBLIC_KEY || !EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID) {
       setFormStatus("config-error");
       setIsSubmitting(false);
@@ -162,7 +161,7 @@ const ContactPage = () => {
         throw new Error("EmailJS yüklenmedi");
       }
 
-      // Güncel tarih ve saat bilgisini al
+      // CurrentTime
       const { date, time } = getCurrentDateTime();
 
       const templateParams = {
@@ -183,7 +182,7 @@ const ContactPage = () => {
 
       setFormStatus("success");
 
-      // Form'u temizle
+      // Clean form
       setFormData({
         name: "",
         email: "",
@@ -226,9 +225,6 @@ const ContactPage = () => {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="flex justify-center mb-6">
-              <Contact className="w-16 h-16 text-red-200" />
-            </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
               İletişim
             </h1>
@@ -239,7 +235,7 @@ const ContactPage = () => {
         </div>
       </section>
 
-      <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+      <div className="px-7 sm:px-8 md:px-14 lg:px-20 xl:px-32">
         {/* Contact Info Cards */}
         <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-white">
           <div className="container mx-auto">

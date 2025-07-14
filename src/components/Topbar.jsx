@@ -3,7 +3,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AkyelLogo from "../assets/akyellogo.png";
-import AkyelLogoYeni from "../assets/akyelturyeni.png";
 import { Link } from "react-router-dom";
 
 const Topbar = () => {
@@ -11,7 +10,7 @@ const Topbar = () => {
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
-  // Dropdown referansı için
+  // Dropdown
   const dropdownRef = useRef(null);
 
   const toggleMobileMenu = () => {
@@ -35,7 +34,6 @@ const Topbar = () => {
     setIsMobileServicesOpen(!isMobileServicesOpen);
   };
 
-  // Dropdown dışında tıklanma olayını dinleme
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -43,7 +41,6 @@ const Topbar = () => {
       }
     };
 
-    // Event listener ekle
     if (isServicesDropdownOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     }
@@ -69,7 +66,7 @@ const Topbar = () => {
   return (
     <section className="w-full bg-white shadow-lg border-b border-gray-100 relative">
       <div className="w-full flex justify-between px-7 sm:px-8 md:px-14 lg:px-20 xl:px-32 gap-6 items-center py-4">
-        {/* Logo - Sabit boyut */}
+        {/* Logo */}
         <div className="flex items-center">
           <div className="w-32 h-12 flex items-center justify-start">
             <img
@@ -276,7 +273,7 @@ const Topbar = () => {
               Blog
             </a>
 
-            {/* Mobile İletişim Button */}
+            {/* Mobile Communication */}
             <div className="pt-4">
               <Link
                 to="/iletisim"

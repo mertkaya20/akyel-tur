@@ -4,21 +4,12 @@ import {
   Shield,
   Clock,
   Award,
-  Users,
-  MapPin,
   Phone,
-  Plus,
-  Minus,
-  Building,
   Mail,
-  Star,
   CheckCircle,
   Target,
   Eye,
   Car,
-  Calendar,
-  ThumbsUp,
-  TrendingUp,
   X,
   ChevronUp,
   ChevronDown,
@@ -36,7 +27,6 @@ const AboutUs = () => {
     setSelectedCertificate(null);
   };
 
-  // Modal'ı kapatmak için overlay'e tıklanma
   const handleOverlayClick = (e) => {
     if (e.target === e.currentTarget) {
       setSelectedCertificate(null);
@@ -297,7 +287,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/*Hizmetlerimiz*/}
+      {/*Services*/}
       <div className="py-20 ">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center py-10">

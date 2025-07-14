@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import {
   Users,
   MapPin,
-  Clock,
   Shield,
   Star,
   Car,
-  ArrowLeft,
   CheckCircle,
   Info,
   Phone,
-  Mail,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -183,7 +180,7 @@ const VehicleFleetPage = () => {
         </div>
       </div>
 
-      {/* Vehicle Selection - Improved */}
+      {/* Vehicle Selection */}
       <div className="bg-white shadow-md border-b-2 border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex justify-center my-2 mb-4">
@@ -244,7 +241,7 @@ const VehicleFleetPage = () => {
       {/* Vehicle Detail */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          {/* Vehicle Image and Basic Info */}
+          {/* Vehicle Image and Info */}
           <div className="relative">
             <div className="relative h-96 lg:h-[500px]">
               <img
@@ -367,7 +364,7 @@ const VehicleFleetPage = () => {
         </div>
       </div>
 
-      {/* Contact CTA - Now Full Width */}
+      {/* Contact CTA */}
       <div className="relative bg-gradient-to-r from-red-500 to-red-600 text-white py-20">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -4,12 +4,12 @@ import { MessageCircle, X, Send } from "lucide-react";
 const WhatsappBot = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Sabit telefon numarası ve mesaj
-  const phoneNumber = "905551234567"; // Buraya kendi numaranızı yazın
-  const message = "Merhaba! Size nasıl yardımcı olabilirim?"; // Varsayılan mesaj
+  // Telephone number and message
+  const phoneNumber = "905551234567"; // Change later
+  const message = "Merhaba! Size nasıl yardımcı olabilirim?";
 
   const handleWhatsAppClick = () => {
-    // WhatsApp Web/App URL'si oluştur
+    // WhatsApp Web/App URL
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;
@@ -23,7 +23,7 @@ const WhatsappBot = () => {
 
   return (
     <>
-      {/* Chat Penceresi */}
+      {/* Chat Modal */}
       {isOpen && (
         <div className="fixed bottom-20 right-4 z-40 bg-white rounded-2xl shadow-2xl border border-gray-200 w-80 max-w-[calc(100vw-2rem)] animate-in slide-in-from-bottom-5 fade-in duration-300">
           {/* Header */}
@@ -47,7 +47,7 @@ const WhatsappBot = () => {
 
           {/* Chat Content */}
           <div className="p-4 space-y-4">
-            {/* Bot Mesajı */}
+            {/* Bot Message */}
             <div className="flex items-start space-x-2">
               <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                 <MessageCircle className="w-4 h-4 text-green-600" />
@@ -60,7 +60,7 @@ const WhatsappBot = () => {
               </div>
             </div>
 
-            {/* Hızlı İletişim Bilgisi */}
+            {/* Contact fast info */}
             <div className="bg-green-50 rounded-lg p-3 border border-green-200">
               <div className="flex items-center space-x-2 mb-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -74,7 +74,7 @@ const WhatsappBot = () => {
               </p>
             </div>
 
-            {/* WhatsApp'ta Devam Et Butonu */}
+            {/* Keep going on whatsapp */}
             <button
               onClick={handleWhatsAppClick}
               className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-4 rounded-lg transition-colors flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
@@ -86,7 +86,7 @@ const WhatsappBot = () => {
         </div>
       )}
 
-      {/* WhatsApp Butonu - Sabit pozisyon */}
+      {/* Whatsapp Button - Position */}
       <div className="fixed bottom-4 right-4 z-50">
         <button
           onClick={toggleChat}
@@ -100,7 +100,7 @@ const WhatsappBot = () => {
             </svg>
           )}
 
-          {/* Çevrimiçi Göstergesi */}
+          {/* Online */}
           {!isOpen && (
             <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-white animate-pulse"></div>
           )}

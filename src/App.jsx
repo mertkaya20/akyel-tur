@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Topbar from "./components/Topbar";
 import Footer from "./components/Footer";
-import Hero from "./components/hero";
+import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
 import Standards from "./components/Standards";

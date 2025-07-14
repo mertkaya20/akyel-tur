@@ -12,16 +12,10 @@ import {
   Bus,
   Heart,
   Navigation,
-  AlertTriangle,
   UserCheck,
   Route,
-  Settings,
-  Target,
   Medal,
-  Trophy,
   Gift,
-  Gem,
-  Contact,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
