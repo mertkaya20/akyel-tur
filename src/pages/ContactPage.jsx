@@ -201,20 +201,22 @@ const ContactPage = () => {
     {
       icon: <Phone className="w-5 h-5" />,
       title: "Telefon",
-      content: "+90 (312) 123 45 67",
-      subContent: "+90 (533) 123 45 67",
+      content: [
+        "+90 (532) 346 11 94",
+        "+90 (544) 299-18-77",
+        "+90 (532) 466-98-89",
+      ],
+      names: ["Erol Akyel", "Sultan Akyel", "Onur Akyel"],
     },
     {
       icon: <Mail className="w-5 h-5" />,
       title: "E-posta",
       content: "info@akyel-turizm.com",
-      subContent: "iletisim@akyel-turizm.com",
     },
     {
       icon: <MapPin className="w-5 h-5" />,
       title: "Adres",
-      content: "Merkezefendi Mah. Atatürk Bulvarı No:123",
-      subContent: "Merkezefendi / Denizli",
+      content: "Denizli Merkezefendi Mah. Atatürk Bulvarı No:123",
     },
   ];
 
@@ -274,12 +276,26 @@ const ContactPage = () => {
                   <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 text-center">
                     {info.title}
                   </h3>
-                  <p className="text-gray-600 text-center text-sm sm:text-base break-words">
-                    {info.content}
-                  </p>
-                  <p className="text-gray-500 text-center text-xs sm:text-sm break-words mt-1">
-                    {info.subContent}
-                  </p>
+                  <div className="text-center text-sm sm:text-base break-words">
+                    {info.title === "Telefon" && Array.isArray(info.content) ? (
+                      <div className="space-y-2">
+                        {info.content.map((phone, phoneIndex) => (
+                          <div
+                            key={phoneIndex}
+                            className="flex items-center justify-center gap-2"
+                          >
+                            <span className="text-black font-medium">
+                              {info.names[phoneIndex]}
+                            </span>
+                            <span className="text-gray-500">-</span>
+                            <span className="text-gray-600">{phone}</span>
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="text-gray-600">{info.content}</p>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
