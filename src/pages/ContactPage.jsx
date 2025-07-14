@@ -25,6 +25,11 @@ const ContactPage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
+  // Environment variables
+  const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+  const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 640);
@@ -43,11 +48,13 @@ const ContactPage = () => {
       script.src =
         "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js";
       script.onload = () => {
-        window.emailjs.init("O2X2kFezyvN8QNHTR");
+        if (EMAILJS_PUBLIC_KEY) {
+          window.emailjs.init(EMAILJS_PUBLIC_KEY);
+        }
       };
       document.head.appendChild(script);
     }
-  }, []);
+  }, [EMAILJS_PUBLIC_KEY]);
 
   // Tarih ve saat formatı için fonksiyon
   const getCurrentDateTime = () => {
@@ -108,6 +115,13 @@ const ContactPage = () => {
     setIsSubmitting(true);
     setFormStatus("");
 
+    // Environment variables kontrolü
+    if (!EMAILJS_PUBLIC_KEY || !EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID) {
+      setFormStatus("config-error");
+      setIsSubmitting(false);
+      return;
+    }
+
     // Form validation
     if (
       !formData.name.trim() ||
@@ -162,8 +176,8 @@ const ContactPage = () => {
       };
 
       await window.emailjs.send(
-        "service_1pryfvr",
-        "template_y0o7n46",
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         templateParams
       );
 
@@ -464,6 +478,16 @@ const ContactPage = () => {
                       <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
                       <span className="text-red-700 text-sm sm:text-base">
                         Lütfen ad ve soyadınızı tam olarak girin.
+                      </span>
+                    </div>
+                  )}
+
+                  {formStatus === "config-error" && (
+                    <div className="flex items-start gap-3 p-3 sm:p-4 bg-red-50 border border-red-200 rounded-lg">
+                      <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                      <span className="text-red-700 text-sm sm:text-base">
+                        E-posta servisi yapılandırması eksik. Lütfen sistem
+                        yöneticisiyle iletişime geçin.
                       </span>
                     </div>
                   )}
