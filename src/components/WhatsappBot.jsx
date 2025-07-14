@@ -5,7 +5,7 @@ const WhatsappBot = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   // Telephone number and message
-  const phoneNumber = "905551234567"; // Change later
+  const phoneNumber = "905324669889";
   const message = "Merhaba! Size nasıl yardımcı olabilirim?";
 
   const handleWhatsAppClick = () => {
