@@ -6,7 +6,7 @@ const WhatsappBot = () => {
 
   // Telephone number and message
   const phoneNumber = "905324669889";
-  const message = "Merhaba! Size nasıl yardımcı olabilirim?";
+  const message = "Merhaba! Bilgi almak istiyorum.";
 
   const handleWhatsAppClick = () => {
     // WhatsApp Web/App URL
