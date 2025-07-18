@@ -95,7 +95,7 @@ const WomenDriverTours = () => {
               <UserCheck className="w-16 h-16 text-red-200" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Gruplara Özel Kadın Şoförlü Gezi Turları
+              Kadın Gruplara Özel Kadın Şoförlü Gezi Turları
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-red-100">
               Kadın grupları için özel olarak tasarlanmış güvenli ve konforlu
