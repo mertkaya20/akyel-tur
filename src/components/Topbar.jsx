@@ -60,6 +60,10 @@ const Topbar = () => {
     },
 
     { name: "Grup Gezi Turları", href: "/hizmetler/grup-gezi-turlari" },
+    {
+      name: "Kadın Gruplara Özel Kadın Şoförlü Gezi Turları",
+      href: "/hizmetler/kadin-soforlu-gezi-turlari",
+    },
     { name: "VIP Servis", href: "/hizmetler/vip-servis" },
   ];
 

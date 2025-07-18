@@ -22,7 +22,7 @@ const Services = () => {
     },
     {
       id: 3,
-      title: "Fabrika Personel Taşımacılığı",
+      title: "Personel Taşımacılığı",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus animi, a odit vel, voluptatem sit, obcaecati ipsam tempore corporis fugiat hic! Eaque non velit culpa dolor accusamus aspernatur nihil est?",
       image:

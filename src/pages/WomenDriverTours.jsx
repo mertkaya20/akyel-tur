@@ -9,29 +9,34 @@ import {
   CheckCircle,
   Compass,
   Medal,
+  Heart,
+  UserCheck,
 } from "lucide-react";
 
-const GroupTours = () => {
+const WomenDriverTours = () => {
   const tourFeatures = [
     {
-      icon: <Users className="w-8 h-8 text-red-500" />,
-      title: "Grup Organizasyonu",
-      description: "Küçük ve büyük gruplar için özel tur programları",
+      icon: <UserCheck className="w-8 h-8 text-red-500" />,
+      title: "Bayan Şoför Hizmeti",
+      description:
+        "Deneyimli ve profesyonel bayan şoförlerimiz ile güvenli yolculuk",
     },
     {
-      icon: <Compass className="w-8 h-8 text-red-500" />,
-      title: "Rehberli Turlar",
-      description: "Deneyimli rehberler eşliğinde unutulmaz geziler",
+      icon: <Heart className="w-8 h-8 text-red-500" />,
+      title: "Kadın Dostu Ortam",
+      description:
+        "Kadınlar için özel olarak tasarlanmış konforlu gezi deneyimi",
     },
     {
       icon: <Shield className="w-8 h-8 text-red-500" />,
       title: "Güvenli Seyahat",
-      description: "Tam sigortalı ve güvenli tur organizasyonu",
+      description: "Özellikle kadın grupları için ekstra güvenlik önlemleri",
     },
     {
       icon: <Star className="w-8 h-8 text-red-500" />,
       title: "Özel Rotalar",
-      description: "Özenle seçilmiş destinasyonlar ve gizli köşeler",
+      description:
+        "Kadın gruplarına özel seçilmiş destinasyonlar ve durma noktaları",
     },
   ];
 
@@ -40,38 +45,36 @@ const GroupTours = () => {
       name: "Güney Şelalesi",
       image:
         "https://images.pexels.com/photos/32531446/pexels-photo-32531446.jpeg",
-      description: "Denizli'de doğal şelale ve piknik alanı",
-      features: ["Doğa yürüyüşü", "Piknik alanları", "Fotoğraf çekimi"],
+      description: "Doğal güzellikler ve huzurlu piknik alanları",
+      features: ["Doğa yürüyüşü", "Fotoğraf çekimi", "Huzurlu ortam"],
     },
     {
       name: "Pamukkale",
       image:
         "https://images.pexels.com/photos/10212470/pexels-photo-10212470.jpeg",
-      description: "Beyaz travertenler ve antik Hierapolis",
-      features: ["Termal havuzlar", "Antik tiyatro", "Kalsiyum terasları"],
+      description: "Termal havuzlar ve antik Hierapolis keşfi",
+      features: ["Termal spa", "Antik tiyatro", "Kalsiyum terasları"],
     },
     {
       name: "Tripolis Antik Kenti",
       image:
         "https://images.pexels.com/photos/14840216/pexels-photo-14840216.jpeg",
-      description: "Tarihi kaleiçi ve muhteşem plajlar",
-      features: ["Arkeolojik kalıntılar", "Tarihi keşif", "Antik kent turu  "],
+      description: "Tarih ve kültür dolu antik kent gezisi",
+      features: ["Arkeolojik keşif", "Tarihi bilgiler", "Kültürel deneyim"],
     },
   ];
 
   const whyChooseTours = [
-    "Profesyonel ve deneyimli tur rehberleri",
-    "Konforlu ve güvenli ulaşım araçları",
-    "Özenle seçilmiş destinasyonlar",
-    "Küçük gruplarla kişisel ilgi",
-    "Tam sigorta kapsamı ve güvenlik",
-    "Esnek tur programları ve zamanları",
-    "Yerel kültür ve lezzetlerle tanışma",
-    "Fotoğraf çekimi için özel molalar",
-    "Uygun fiyat ve kalite dengesi",
-    "Grup indirimleri ve özel teklifler",
-    "7/24 destek ve acil durum hizmeti",
-    "Unutulmaz anılar ve deneyimler",
+    "Deneyimli ve güvenilir bayan şoförler",
+    "Temiz ve hijyenik araç içi ortam",
+    "Özel güvenlik protokolleri",
+    "Esnek program ve zaman dilimi seçenekleri",
+    "Mahremiyet ve konfor önceliği",
+    "Kadın gruplarına özel indirimler",
+    "7/24 güvenlik ve destek hizmeti",
+    "Ailelerin gönül rahatlığı ile tercih ettiği hizmet",
+    "Özel organizasyon ve etkinlik imkanları",
+    "Unutulmaz ve güvenli gezi deneyimi",
   ];
 
   const scrollToSection = (id) => {
@@ -89,14 +92,14 @@ const GroupTours = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <div className="flex justify-center mb-6">
-              <Compass className="w-16 h-16 text-red-200" />
+              <UserCheck className="w-16 h-16 text-red-200" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Grup Gezi Turları
+              Gruplara Özel Bayan Şoförlü Gezi Turları
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-red-100">
-              Arkadaşlarınızla, ailenizle veya iş arkadaşlarınızla unutulmaz
-              keşif turları
+              Kadın grupları için özel olarak tasarlanmış güvenli ve konforlu
+              gezi deneyimi
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -109,7 +112,7 @@ const GroupTours = () => {
                 onClick={() => scrollToSection("tur-avantajlari")}
                 className="cursor-pointer border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-red-500 transition-colors duration-200"
               >
-                Tur Avantajları
+                Özel Avantajlar
               </button>
             </div>
           </div>
@@ -125,12 +128,12 @@ const GroupTours = () => {
                 <Star className="w-4 h-4 text-white" />
               </div>
               <p className="uppercase tracking-widest text-red-600 font-semibold text-md">
-                Tur Avantajları
+                Özel Avantajlar
               </p>
             </div>
 
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-              Grup Gezi Turları Özellikleri
+              Bayan Şoförlü Tur Özellikleri
             </h1>
 
             <div className="flex justify-center mt-4 relative h-1">
@@ -138,7 +141,8 @@ const GroupTours = () => {
             </div>
 
             <p className="text-lg pt-3 text-gray-600 max-w-2xl mx-auto">
-              Profesyonel organizasyon ile unutulmaz gezi deneyimleri yaşayın
+              Kadın grupları için özel olarak tasarlanmış güvenli ve konforlu
+              gezi deneyimi
             </p>
           </div>
 
@@ -168,38 +172,38 @@ const GroupTours = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="bg-red-500 p-2 rounded-md">
-                  <Camera className="w-4 h-4 text-white" />
+                  <Heart className="w-4 h-4 text-white" />
                 </div>
                 <p className="uppercase tracking-widest text-red-600 font-semibold text-md">
-                  DENEYİM
+                  ÖZEL DENEYİM
                 </p>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Unutulmaz Anılar Biriktirin
+                Gezi Deneyimi
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Grup gezi turlarımızda sadece yerler gezmiyor, aynı zamanda
-                unutulmaz anılar biriktiriyorsunuz. Profesyonel rehberlerimiz
-                eşliğinde keşfedeceğiniz her yer, öğreneceğiniz her bilgi
-                hayatınızda iz bırakacak.
+                Bayan şoförlü gezi turlarımızda kadın grupları için özel olarak
+                tasarlanmış konforlu ve güvenli bir deneyim sunuyoruz. Deneyimli
+                bayan şoförlerimiz sayesinde gönül rahatlığı ile keyifli anılar
+                biriktirin.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-red-500" />
                   <span className="text-gray-700">
-                    Profesyonel fotoğraf çekimi imkanı
+                    Deneyimli ve güvenilir bayan şoförler
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-red-500" />
                   <span className="text-gray-700">
-                    Yerel kültür ve lezzetlerle tanışma
+                    Kadın gruplarına özel mahremiyet
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-red-500" />
                   <span className="text-gray-700">
-                    Grup halinde sosyal aktiviteler
+                    Temiz ve hijyenik araç içi ortam
                   </span>
                 </div>
               </div>
@@ -207,8 +211,8 @@ const GroupTours = () => {
             <div className="relative">
               <div className="aspect-w-16 aspect-h-12 rounded-lg overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1741789596775-a119aa9b7e45?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Grup gezi turları"
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1088&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Bayan şoförlü gezi turları"
                   className="w-full h-96 object-cover"
                 />
               </div>
@@ -231,24 +235,24 @@ const GroupTours = () => {
                 </p>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Güvenli ve Konforlu Tur Deneyimi
+                Maksimum Güvenlik ve Konfor
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Tur güvenliği bizim için öncelik. Deneyimli rehberlerimiz,
-                lisanslı şoförlerimiz ve tam sigortalı araçlarımızla her
-                destinasyonda güvenli bir gezi deneyimi yaşayacaksınız.
+                Kadın gruplarının güvenliği bizim önceliğimiz. Deneyimli bayan
+                şoförlerimiz, özel güvenlik protokollerimiz ve tam sigortalı
+                araçlarımızla her yolculukta gönül rahatlığı yaşayacaksınız.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-red-500" />
                   <span className="text-gray-700">
-                    Deneyimli ve sertifikalı tur rehberleri
+                    Profesyonel ve deneyimli bayan şoförler
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-red-500" />
                   <span className="text-gray-700">
-                    Konforlu ve güvenli ulaşım araçları
+                    Kadın gruplarına özel güvenlik önlemleri
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -257,17 +261,15 @@ const GroupTours = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-red-500" />
-                  <span className="text-gray-700">
-                    Acil durum desteği ve iletişim
-                  </span>
+                  <span className="text-gray-700">7/24 acil durum desteği</span>
                 </div>
               </div>
             </div>
             <div className="relative">
               <div className="aspect-w-16 aspect-h-12 rounded-lg overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1546489800-3f420ef6dca8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Güvenli tur deneyimi"
+                  src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1126&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Güvenli bayan şoförlü tur"
                   className="w-full h-96 object-cover"
                 />
               </div>
@@ -290,7 +292,7 @@ const GroupTours = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-              En Çok Tercih Edilen Rotalar
+              Kadın Gruplarına Özel Rotalar
             </h1>
 
             <div className="flex justify-center mt-4 relative h-1">
@@ -298,7 +300,7 @@ const GroupTours = () => {
             </div>
 
             <p className="text-lg pt-3 text-gray-600 max-w-2xl mx-auto">
-              Türkiye'nin en güzel destinasyonları ile tanışın
+              Özenle seçilmiş destinasyonlar ve kadın dostu durma noktaları
             </p>
           </div>
 
@@ -315,7 +317,7 @@ const GroupTours = () => {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    Popüler
+                    Özel
                   </div>
                 </div>
                 <div className="p-6">
@@ -357,7 +359,7 @@ const GroupTours = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-              Neden Bizimle Gezmeli?
+              Neden Bayan Şoförlü Turları?
             </h1>
 
             <div className="flex justify-center mt-4 relative h-1">
@@ -365,7 +367,8 @@ const GroupTours = () => {
             </div>
 
             <p className="text-lg pt-3 text-gray-600 max-w-2xl mx-auto">
-              Grup gezi turlarında güvenilir ve deneyimli ortağınız
+              Kadın grupları için özel olarak tasarlanmış güvenli ve konforlu
+              gezi deneyimi
             </p>
           </div>
 
@@ -388,11 +391,11 @@ const GroupTours = () => {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-7 sm:px-8 md:px-14 lg:px-20 xl:px-32 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Hayalindeki Gezi Turunu Keşfet
+            Güvenli ve Konforlu Gezi Deneyimi
           </h2>
           <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
-            Grup gezi turlarımız hakkında detaylı bilgi almak ve rezervasyon
-            yapmak için hemen iletişime geçin
+            Bayan şoförlü gezi turlarımız hakkında detaylı bilgi almak ve
+            rezervasyon yapmak için hemen iletişime geçin
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -416,4 +419,4 @@ const GroupTours = () => {
   );
 };
 
-export default GroupTours;
+export default WomenDriverTours;

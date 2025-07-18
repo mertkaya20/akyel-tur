@@ -21,6 +21,7 @@ import WhatsappBot from "./components/WhatsappBot";
 import PersonnelTransport from "./pages/PersonnelTransportation";
 import GroupTours from "./pages/GroupTours";
 import StudyServices from "./pages/StudyServices";
+import WomenDriverTours from "./pages/WomenDriverTours";
 
 // ScrollToTop Component
 const ScrollToTop = () => {
@@ -64,6 +65,10 @@ const App = () => {
         />
         <Route path="hizmetler/grup-gezi-turlari" element={<GroupTours />} />
         <Route path="/hizmetler/etut-servisleri" element={<StudyServices />} />
+        <Route
+          path="/hizmetler/kadin-soforlu-gezi-turlari"
+          element={<WomenDriverTours />}
+        />
       </Routes>
       <Footer />
       <WhatsappBot />

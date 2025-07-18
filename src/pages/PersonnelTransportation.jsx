@@ -522,7 +522,7 @@ const PersonnelTransport = () => {
               className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-red-500 transition-colors duration-200 flex items-center justify-center gap-2"
             >
               <MapPin className="w-5 h-5" />
-              Ücretsiz Teklif Al
+              Teklif Al
             </a>
           </div>
         </div>
