@@ -17,9 +17,9 @@ const WomenDriverTours = () => {
   const tourFeatures = [
     {
       icon: <UserCheck className="w-8 h-8 text-red-500" />,
-      title: "Bayan Şoför Hizmeti",
+      title: "Kadın Şoför Hizmeti",
       description:
-        "Deneyimli ve profesyonel bayan şoförlerimiz ile güvenli yolculuk",
+        "Deneyimli ve profesyonel kadın şoförlerimiz ile güvenli yolculuk",
     },
     {
       icon: <Heart className="w-8 h-8 text-red-500" />,
@@ -65,7 +65,7 @@ const WomenDriverTours = () => {
   ];
 
   const whyChooseTours = [
-    "Deneyimli ve güvenilir bayan şoförler",
+    "Deneyimli ve güvenilir kadın şoförler",
     "Temiz ve hijyenik araç içi ortam",
     "Özel güvenlik protokolleri",
     "Esnek program ve zaman dilimi seçenekleri",
@@ -95,7 +95,7 @@ const WomenDriverTours = () => {
               <UserCheck className="w-16 h-16 text-red-200" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Gruplara Özel Bayan Şoförlü Gezi Turları
+              Gruplara Özel Kadın Şoförlü Gezi Turları
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-red-100">
               Kadın grupları için özel olarak tasarlanmış güvenli ve konforlu
@@ -133,7 +133,7 @@ const WomenDriverTours = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-              Bayan Şoförlü Tur Özellikleri
+              Kadın Şoförlü Tur Özellikleri
             </h1>
 
             <div className="flex justify-center mt-4 relative h-1">
@@ -182,16 +182,16 @@ const WomenDriverTours = () => {
                 Gezi Deneyimi
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Bayan şoförlü gezi turlarımızda kadın grupları için özel olarak
-                tasarlanmış konforlu ve güvenli bir deneyim sunuyoruz. Deneyimli
-                bayan şoförlerimiz sayesinde gönül rahatlığı ile keyifli anılar
-                biriktirin.
+                Kadın şoför ile gezi turlarımızda kadın grupları için özel
+                olarak tasarlanmış konforlu ve güvenli bir deneyim sunuyoruz.
+                Deneyimli kadın şoförlerimiz sayesinde gönül rahatlığı ile
+                keyifli anılar biriktirin.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-red-500" />
                   <span className="text-gray-700">
-                    Deneyimli ve güvenilir bayan şoförler
+                    Deneyimli ve güvenilir kadın şoförler
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -212,7 +212,7 @@ const WomenDriverTours = () => {
               <div className="aspect-w-16 aspect-h-12 rounded-lg overflow-hidden shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1088&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Bayan şoförlü gezi turları"
+                  alt="Kadın şoförlü gezi turları"
                   className="w-full h-96 object-cover"
                 />
               </div>
@@ -238,7 +238,7 @@ const WomenDriverTours = () => {
                 Maksimum Güvenlik ve Konfor
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Kadın gruplarının güvenliği bizim önceliğimiz. Deneyimli bayan
+                Kadın gruplarının güvenliği bizim önceliğimiz. Deneyimli kadın
                 şoförlerimiz, özel güvenlik protokollerimiz ve tam sigortalı
                 araçlarımızla her yolculukta gönül rahatlığı yaşayacaksınız.
               </p>
@@ -246,7 +246,7 @@ const WomenDriverTours = () => {
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-red-500" />
                   <span className="text-gray-700">
-                    Profesyonel ve deneyimli bayan şoförler
+                    Profesyonel ve deneyimli kadın şoförler
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -269,7 +269,7 @@ const WomenDriverTours = () => {
               <div className="aspect-w-16 aspect-h-12 rounded-lg overflow-hidden shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1126&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Güvenli bayan şoförlü tur"
+                  alt="Güvenli kadın şoförlü tur"
                   className="w-full h-96 object-cover"
                 />
               </div>
@@ -359,7 +359,7 @@ const WomenDriverTours = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-              Neden Bayan Şoförlü Turları?
+              Neden Kadın Şoförlü Turları?
             </h1>
 
             <div className="flex justify-center mt-4 relative h-1">
@@ -394,7 +394,7 @@ const WomenDriverTours = () => {
             Güvenli ve Konforlu Gezi Deneyimi
           </h2>
           <p className="text-xl text-red-100 mb-8 max-w-2xl mx-auto">
-            Bayan şoförlü gezi turlarımız hakkında detaylı bilgi almak ve
+            Kadın şoför ile gezi turlarımız hakkında detaylı bilgi almak ve
             rezervasyon yapmak için hemen iletişime geçin
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
